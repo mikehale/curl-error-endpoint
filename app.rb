@@ -33,7 +33,7 @@ loop do
     when "/empty"
       #causes (52) Empty reply from server in curl
     when "/", "/help"
-      client.puts "HTTP/1.1 200 OK"
+      client.puts "HTTP/1.1 200 OK\r\nUsage:\r\n* /empty - trigger empty response from server"
     end
     client.close
   end
